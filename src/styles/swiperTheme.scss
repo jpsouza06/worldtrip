@@ -1,0 +1,23 @@
+:root {
+  --swiper-theme-color: #ffba08;
+}
+
+.swiper-container .swiper-button-prev,
+.swiper-container .swiper-button-next {
+  color: #ffba08;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.swiper-pagination {
+  margin-bottom: 0.5rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background: #999999;
+  opacity: unset;
+
+  &.swiper-pagination-bullet-active {
+    background: #ffba08;
+  }
+}
