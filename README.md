@@ -4,9 +4,6 @@
 <p align="center">
     Made by <a href="https://github.com/jpsouza06">Joao Paulo</a>
 </p>
-<p align="center"  color="#FF57B2">
-    <a href="https://spacetraveling-theta.vercel.app/">Click here</a> to visit the site
-</p>
 
 
  ## 
@@ -21,9 +18,9 @@
 
 # :rocket: About
 
-A simple blog where we can see the title of the post on the home page and, when clicking, be redirected to the post.
+Worldtrip is a site to discover the most visited cities on each continent
 
-The site was made with NextJS, the posts are loaded by Prismic CMS and the comments are made through the Utterances.
+The site was made with NextJS, the data are loaded by MirageJS(only in develompment) and the slide carousel its made with Swiper.
 
 ##
 
@@ -31,25 +28,20 @@ The site was made with NextJS, the posts are loaded by Prismic CMS and the comme
 # :camera: Screenshots
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/54922299/144235788-5cf6f8c9-2bb3-4d73-a276-33e1ce108118.jpeg" width="400px">
-  <img src="https://user-images.githubusercontent.com/54922299/144235796-34122a22-6d46-429e-b237-19941167c777.jpeg" width="400px">
-  <img src="https://user-images.githubusercontent.com/54922299/144235807-bda1244a-915e-4948-b58a-75eddf4631d8.jpeg" width="400px">
-  <img src="https://user-images.githubusercontent.com/54922299/144235813-8a89b512-a2cd-4a3d-b892-0eaed6263770.jpeg" width="400px">
-  <img src="https://user-images.githubusercontent.com/54922299/144235819-072187a6-894c-42d9-ac5d-cf9198155335.jpeg" width="400px">
-  <img src="https://user-images.githubusercontent.com/54922299/144235822-19238ad0-6bbb-4acb-acdf-026e81d71f8a.jpeg" width="400px">
+  <img src="https://user-images.githubusercontent.com/54922299/146383893-190f36f8-c42d-4a57-a06f-7a36b60af99e.jpeg" width="400px">
+  <img src="https://user-images.githubusercontent.com/54922299/146383900-dfa14192-e430-48a9-8de6-c5c0d77c108b.jpeg" width="400px">
+  <img src="https://user-images.githubusercontent.com/54922299/146383904-a29baf7c-0aac-4ca0-b049-74871e9ea2cc.jpeg" width="400px">
+  <img src="https://user-images.githubusercontent.com/54922299/146383908-ceffd1f9-3793-4a46-9ed8-7bba36a06a07.jpeg" width="400px">
 </div>
-
-
 
 # :computer: Technologies
 This project was made using the follow technologies:
 
 * [NextJS](https://nextjs.org/) 
 * [Typescript](https://www.typescriptlang.org/)          
-* [Sass](https://sass-lang.com/)
-* [Prismic CMS](https://prismic.io/)
-* [Utterances](https://utteranc.es/)
-* [Date-fns](https://date-fns.org/)
+* [ChakraUI](https://chakra-ui.com/)
+* [MirageJS](https://miragejs.com/)
+* [Swiper](https://swiperjs.com/)
 
 
 
@@ -61,13 +53,12 @@ This project was made using the follow technologies:
 
 # Copy this repository with the command
 ```
-git clone https://github.com/jpsouza06/spacetraveling.git
+git clone https://github.com/jpsouza06/worldtrip.git
 ```
 # Install dependencies
 ```
 yarn 
 ```
-
 # Run the application
 ```
 yarn dev
