@@ -8,6 +8,11 @@ import '../styles/swiperTheme.scss'
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import 'swiper/scss/scrollbar';
+import { makeServer } from '../services/mirage';
+
+if (process.env.NODE_ENV === 'development') {
+  makeServer();
+}
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

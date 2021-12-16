@@ -7,21 +7,7 @@ import { Carousel } from "../components/Home/Carousel";
 
 import Head from "next/head";
 
-import { GetStaticProps } from "next";
-import { api } from "../services/api";
-
-interface Continent {
-  id: number;
-  name: string;
-  description: string;
-  carrouselImage: string;
-}
-
-interface CarouselProps {
-  continents: Continent[];
-}
-
-export default function Home({continents}: CarouselProps) {
+export default function Home() {
   return (
     <>
       <Head>
@@ -40,21 +26,9 @@ export default function Home({continents}: CarouselProps) {
           <Text fontWeight='500' fontSize={[20, 36]}>Então escolha seu continente</Text>
         </Flex>
 
-        <Carousel continents={continents}/>
+        <Carousel/>
       </Box>
     </>
   )
 }
 
-
-export const getStaticProps: GetStaticProps = async () => {
-  const response = await api.get('/continents');
-
-  const continents = response.data
-
-  return {
-    props: {
-      continents
-    }
-  }
-}

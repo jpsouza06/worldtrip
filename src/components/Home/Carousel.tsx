@@ -1,5 +1,8 @@
 import Link from 'next/link';
 
+import { api } from "../../services/api";
+import { useEffect, useState } from "react";
+
 import { Box, Button, Flex, Image, Text } from "@chakra-ui/react";
 
 import { Navigation, Pagination} from 'swiper';
@@ -12,11 +15,14 @@ interface Continent {
   carrouselImage: string;
 }
 
-interface CarouselProps {
-  continents: Continent[];
-}
+export function Carousel() {
 
-export function Carousel({continents}: CarouselProps) {
+  const [continents, setContinents] = useState<Continent[]>([])
+
+  useEffect(() => {
+    api.get('/continents')
+    .then(response => setContinents(response.data.continents))
+}, []);
 
   return (
     <Box maxW={1240}  mx='auto' textAlign='center' pb='10' pt='13' pos='relative'>
@@ -31,7 +37,7 @@ export function Carousel({continents}: CarouselProps) {
       {continents.map(continent => (
             
             <SwiperSlide key={continent.id}>
-              <Link href={`/continent/${continent.id}`} key={continent.id}>
+              <Link href={`/continents/${continent.id}`} key={continent.id}>
                 <Button
                   key={continent.id}
                   as='a'
