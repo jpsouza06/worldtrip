@@ -13,7 +13,7 @@ export function Header({isHomePage}: HeaderProps) {
     <Flex as="header" >
       
       { !isHomePage && (
-        <Link href='/'>
+        <Link href='/' passHref>
         <Icon
           as={IoIosArrowBack}
           cursor='pointer'

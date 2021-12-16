@@ -27,6 +27,7 @@ export function Banner() {
 
         <Image
           src={'/images/Airplane.svg'}
+          alt='airplane'
           pt='20'
           boxSize={[0, 300,400]}
         />

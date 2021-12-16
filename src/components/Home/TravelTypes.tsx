@@ -1,4 +1,4 @@
-import { Grid, GridItem, Text, useBreakpointValue, Image } from "@chakra-ui/react";
+import { Grid, GridItem, Text, Image } from "@chakra-ui/react";
 
 
 
@@ -14,27 +14,27 @@ export function TravelTypes() {
         justifyContent='center'
       >
         <GridItem>
-          <Image src='/images/cocktail.svg' w={['60px', 'auto']}/>
+          <Image src='/images/cocktail.svg' alt='cocktail' w={['60px', 'auto']}/>
           <Text fontWeight='600' mt='4'>vida noturna</Text>
         </GridItem>
 
         <GridItem>
-          <Image src='/images/surf.svg' w={['60px', 'auto']}/>
+          <Image src='/images/surf.svg' alt='surf' w={['60px', 'auto']}/>
           <Text fontWeight='600' mt='4'>praia</Text>
         </GridItem>
 
         <GridItem>
-          <Image src='/images/building.svg' w={['60px', 'auto']}/>
+          <Image src='/images/building.svg' alt='building' w={['60px', 'auto']}/>
           <Text fontWeight='600' mt='4'>moderno</Text>
         </GridItem>
 
         <GridItem>
-          <Image src='/images/museum.svg' w={['60px', 'auto']}/>
+          <Image src='/images/museum.svg' alt='museum' w={['60px', 'auto']}/>
           <Text fontWeight='600' mt='4'>clássico</Text>
         </GridItem>
 
         <GridItem colStart={{base: 1, md: 'auto'}} colEnd={{base: 3, md: 'auto'}} >
-          <Image src='/images/earth.svg' w={['60px', 'auto']}/>
+          <Image src='/images/earth.svg' alt='earth' w={['60px', 'auto']}/>
           <Text fontWeight='600' mt='4'>e mais...</Text>
         </GridItem>
       </Grid>

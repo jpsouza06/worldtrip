@@ -37,7 +37,7 @@ export function Carousel() {
       {continents.map(continent => (
             
             <SwiperSlide key={continent.id}>
-              <Link href={`/continents/${continent.id}`} key={continent.id}>
+              <Link href={`/continents/${continent.id}`} key={continent.id} passHref>
                 <Button
                   key={continent.id}
                   as='a'

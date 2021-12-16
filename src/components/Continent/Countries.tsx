@@ -31,7 +31,7 @@ export function Countries({countries}: CountriesProps) {
         justifyContent='center'
       >
         {countries.map(country => (
-          <GridItem>
+          <GridItem key={country.id}>
             <Box
               bgImage={country.image}
               h={173}
@@ -53,6 +53,7 @@ export function Countries({countries}: CountriesProps) {
               </Stack>
               <Image
                 src={country.flag}
+                alt={country.name}
                 borderRadius='full'
                 boxSize='8'
                 border='1px'
