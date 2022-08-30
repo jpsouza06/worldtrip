@@ -36,14 +36,18 @@ type Continent = {
 export default function Continent() {
   const [continents, setContinents] = useState<Continent>()
 
+  const path = useRouter().asPath.split("/")
+
   useEffect(() => {
     async function getContinents() {
-      await api.get('/continents/1')
-      .then(response => setContinents(response.data.continent)) 
+      await api.get(`/continents/${path[2]}`)
+      .then(response => setContinents(response.data)) 
     }    
 
     getContinents();
 }, []);
+
+  
   return (
     <>
       <Head>

@@ -21,7 +21,7 @@ export function Carousel() {
 
   useEffect(() => {
     api.get('/continents')
-    .then(response => setContinents(response.data.continents))
+    .then(response => setContinents(response.data))
 }, []);
 
   return (
@@ -33,9 +33,10 @@ export function Carousel() {
       navigation
       pagination={{ clickable: true }}
       loop
+      initialSlide={1}
     >
       {continents.map(continent => (
-            
+              
             <SwiperSlide key={continent.id}>
               <Link href={`/continents/${continent.id}`} key={continent.id} passHref>
                 <Button
@@ -47,6 +48,7 @@ export function Carousel() {
                   p= '0'
                   cursor='pointer'
                 >
+                  {console.log(continent)}
                   <Image
                     src={continent.carrouselImage}
                     alt={continent.name}
